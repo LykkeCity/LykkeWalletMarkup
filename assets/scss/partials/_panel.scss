@@ -1,0 +1,48 @@
+.panel {
+  &__header {
+    @include rem(padding, 24px 0);
+  }
+
+  &__body {
+    @include rem(padding-bottom, 25px)
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &__header {
+      padding: 16px 0;
+    }
+  }
+}
+
+.panel_heading {
+  background-color: #f5f6f7;
+  border: 0;
+
+  a {
+    @include rem(padding, 22px 0);
+
+    &:after {
+      @include rem(margin-top, -13px);
+    }
+  }
+}
+
+.panel_title {
+  span {
+    line-height: 1.88;
+    color: #8c94a0;
+    font-weight: normal;
+
+    @include rem(font-size, 16px);
+    @include rem(margin-left, 10px);
+  }
+}
+
+.panel_body {
+  @include rem(padding-top, 20px);
+  @include rem(padding-bottom, 20px);
+}
+
+.panel_group .panel {
+  @include rem(margin-bottom, 10px);
+}

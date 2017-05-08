@@ -1,0 +1,37 @@
+.small_block {
+  width: 570px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__header {
+    @include rem(margin-bottom, 30px);
+
+    .page__title {
+      @include rem(margin-bottom, 30px);
+
+      span {
+        display: block;
+
+        @include rem(margin-top, 8px);
+      }
+
+      .label {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+      color: $secondary;
+
+      @include rem(font-size, 16px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__body {}
+}

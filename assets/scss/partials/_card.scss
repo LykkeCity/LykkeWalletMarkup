@@ -1,0 +1,156 @@
+.card {
+  &__actions {
+    .action_link.pull-right {
+      @include rem(margin-left, 20px);
+    }
+  }
+
+  &--preview {
+    border-bottom: 1px solid $border-alt;
+
+    @include rem(margin-bottom, 10px);
+    @include rem(padding, 30px 0);
+
+    .address_code {
+      font-weight: normal;
+      font-style: normal;
+
+      @include rem(font-size, 18px);
+    }
+
+    .issuer {
+      a:not(.btn):not(.label) {
+        color: inherit;
+
+        &:hover {
+          color: lighten($secondary, 10%);
+        }
+      }
+
+      &__img {
+        float: left;
+
+        @include rem(width, 80px);
+        @include rem(padding-right, 32px);
+      }
+
+      &__content {
+        display: block;
+        height: auto;
+        border-bottom: 0;
+      }
+
+      &__name {
+        color: #333;
+        font-weight: $fw-semi;
+        line-height: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @include rem(font-size, 22px);
+        @include rem(margin-top, 0px);
+        @include rem(margin-bottom, 7px);
+      }
+    }
+
+    .card {
+      &__inner {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      &__header {
+        @include rem(margin-bottom, 14px);
+      }
+
+      &__body {
+        height: auto;
+
+        @include rem(font-size, 16px);
+      }
+      
+      &__footer {
+        position: static;
+        padding-bottom: 0;
+      }
+
+      &__status {
+        float: right;
+        text-align: right;
+
+        .label, &.label {
+          padding-left: 0;
+          padding-right: 0;
+          margin-right: 0;
+        }
+      }
+
+      &__actions {
+        padding: 0;
+      }
+
+      &__desc {
+        @include rem(margin-bottom, 12px);
+      }
+
+      &__sum {
+        font-weight: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color: #333;
+        position: static;
+
+        @include rem(font-size, 22px);
+        @include rem(margin-top, -6px);
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &--preview {
+
+      .issuer__content {
+        position: relative;
+      }
+
+      .card {
+        &__sum {
+          margin-bottom: 4px;
+          margin-top: 0;
+          text-align: left !important;
+        }
+
+        &__status {
+          position: absolute;
+          top: -3px;
+          right: 0;
+          padding: 0;
+          white-space: nowrap;
+          overflow: visible;
+          
+          .label {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 365px) {
+    &--preview {
+      .card {
+        &__desc {
+          @include clearfix;
+
+          .label {
+            margin-bottom: 4px;
+            float: left;
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lykke - anyone can trade</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68151354-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+<aside class="menu_overlay"></aside>
+
+<aside class="sidebar_menu">
+  <div class="sidebar_menu__inner">
+    <div class="sidebar_menu__header">
+      <button class="btn btn--icon btn_close_menu">
+        <i class="icon icon--close"></i>
+      </button>
+      <div class="header_logo">
+        <a href="/">
+          <img class="header_logo__img" src="img/lykke_new.svg" height="40" alt="lykke_logo">
+        </a>
+      </div>
+    </div>
+
+    <div class="sidebar_menu__body">
+      <ul class="main_projects_list">
+        <li class="main_projects_list__item">
+          <a href="" class="main_projects_list__link">
+            <div class="main_projects_list__img">
+              <img src="img/lykke_wallet_logo.svg" alt="lykke_wallet_logo" width="50">
+            </div>
+            <div class="main_projects_list__content">
+              <div class="main_projects_list__title">Lykke<span>Wallet</span></div>
+              <div class="main_projects_list__text">
+                Trade FX and Digital Assets
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="main_projects_list__item">
+          <a href="https://streams.lykke.com/" target="_blank" class="main_projects_list__link">
+            <div class="main_projects_list__img">
+              <img src="img/streams_logo.svg" alt="streams_logo" width="50">
+            </div>
+            <div class="main_projects_list__content">
+              <div class="main_projects_list__title">Lykke<span>Streams</span></div>
+              <div class="main_projects_list__text">
+                Collaboration platform. Here the great ideas meet bright minds
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="main_projects_list__item">
+          <a href="https://blockchainexplorer.lykke.com/" target="_blank" class="main_projects_list__link">
+            <div class="main_projects_list__img">
+              <img src="img/bl_explorer_logo.svg" alt="bl_explorer_logo" width="50">
+            </div>
+            <div class="main_projects_list__content">
+              <div class="main_projects_list__title">Blockchain<span>Explorer</span></div>
+              <div class="main_projects_list__text">
+                Explore the Blockchain. Search transaction, assets, addresses or blocks
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="sidebar_menu__footer">
+      <ul class="social">
+        <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i><span> Facebook</span></a></li>
+        <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i><span> Twitter</span></a></li>
+        <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i><span> Instagram</span></a></li>
+        <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i><span> Youtube</span></a></li>
+        <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i><span> Linkedin</span></a></li>
+        <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i><span> Reddit</span></a></li>
+        <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item"><i class="icon icon--telegram"></i><span> Telegram</span></a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+<div class="header_container">
+  <header class="header">
+    <div class="container">
+      <div class="header__menu_button">
+        <button class="btn btn_menu btn--icon" type="button">
+          <span></span>
+        </button>
+      </div>
+      <div class="header__logo header_logo">
+        <a href="/">
+          <img class="header_logo__img" src="img/lykke_wallet_logo.svg" height="40" alt="lykke_logo">
+          <div class="header_logo__title">Lykke<span>Wallet</span></div>
+        </a>
+      </div>
+      <div class="header__actions header_actions pull-right">
+        <div class="header_actions__logout visible-xs pull-right">
+          <a href="/Home/LogOut" class="btn btn--icon btn_logout">
+            <i class="icon icon--exit"></i>
+          </a>
+        </div>
+        <div class="header_actions__login header_login pull-right">
+
+          <div class="header_user dropdown__control">
+            <a href="/Home/SignIn">
+              <div class="header_login__title hidden-xs">Sign in</div>
+
+              <!--<div class="header_user__img">
+                <img src="img/user_default.svg" width="40" alt="user_image">
+              </div>
+
+              <div class="header_login__title">Leroy</div>-->
+            </a>
+          </div>
+
+          <div class="dropdown__container">
+            <ul class="dropdown__nav">
+              <li><a href="/Home/LogOut">Sign Out</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<nav class="header_nav">
+  <div class="header_nav__inner">
+    <div class="container">
+      <ul class="header_nav__list nav_list">
+        <li class="nav_list__item nav_list__item--active"><a href="">Accounts</a></li>
+        <li class="nav_list__item"><a href="">Trading</a></li>
+        <li class="nav_list__item"><a href="">My Lykke</a></li>
+      </ul>
+      <div class="header_nav_balance pull-right">
+        <div class="dropdown_control">
+          <i class="icon icon--finance_alt"></i>
+          <div class="header_nav_balance__currency">
+            <span>LKK</span>
+          </div>
+          <div class="header_nav_balance__value">103.84620625</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="site_nav">
+  <div class="site_nav__inner">
+    <div class="container">
+      <ul class="header_nav__list nav_list nav_list--alt">
+        <li class="nav_list__item nav_list__item--active"><a href="">Current accounts</a></li>
+        <li class="nav_list__item"><a href="">Margin accounts</a></li>
+        <li class="nav_list__item"><a href="">Private wallet</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<article class="content">
+
+  <section class="section section--padding">
+    <div class="container">
+
+      <div class="page_header">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Current accounts</h2>
+            <p>An asset is a form of digital token so-called colored coin. Colored coins follow the idea of “coloring” a specific Bitcoin to be broadcasted over the Bitcoin network.</p>
+          </div>
+          <div class="col-xs-12 col-sm-5 pull-right">
+            <h4 class="h4_muted">Total Balance</h4>
+            <div class="balance_value balance_value--large">LKK 103.84620625</div>
+            <div class="balance_data">
+              <div class="balance_data__item">
+                <span class="balance_data__title">Received:</span>
+                <span class="balance_data__value">LKK 45,280.46</span>
+              </div>
+              <div class="balance_data__item">
+                <span class="balance_data__title">Sent:</span>
+                <span class="balance_data__value">LKK 45,280.46</span>
+              </div>
+              <div class="balance_data__item">
+                <span class="balance_data__title">P&L:</span>
+                <span class="balance_data__value text--green">+153</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="panel_group" id="accordion" role="tablist" aria-multiselectable="false">
+      <div class="panel panel--accordion">
+        <div class="panel_heading panel_heading--active" role="tab" id="headingOne">
+          <div class="container">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h4 class="panel_title">FX <span>5 assets</span></h4>
+            </a>
+          </div>
+        </div>
+        <div id="collapseOne" class="panel_collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel_body">
+            <div class="container">
+              <div class="table-responsive">
+                <table class="table table--simple table_asstes">
+                  <tr>
+                    <th class="_asset visible-xs">Asset</th>
+                    <th class="_asset hidden-xs" colspan="2">Asset</th>
+                    <th class="_currency">Base currency</th>
+                    <th class="_amount">Amount</th>
+                    <th class="_action"></th>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">CHF</a></div>
+                    </td>
+                    <td class="_currency">LKK 3,779.33</td>
+                    <td class="_amount">CHF 1.04</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">EUR</a></div>
+                    </td>
+                    <td class="_currency">LKK 3,779.33</td>
+                    <td class="_amount">CHF 1.04</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">GBP</a></div>
+                    </td>
+                    <td class="_currency">LKK 3,779.33</td>
+                    <td class="_amount">CHF 1.04</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">JPY</a></div>
+                    </td>
+                    <td class="_currency">LKK 3,779.33</td>
+                    <td class="_amount">CHF 1.04</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">USD</a></div>
+                    </td>
+                    <td class="_currency">LKK 3,779.33</td>
+                    <td class="_amount">CHF 1.04</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel--accordion">
+        <div class="panel_heading" role="tab" id="headingTwo">
+          <div class="container">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <h4 class="panel_title">Lykke Corp <span>2 assets</span></h4>
+            </a>
+          </div>
+        </div>
+        <div id="collapseTwo" class="panel_collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel_body">
+            <div class="container">
+              <div class="table-responsive">
+                <table class="table table--simple table_asstes">
+                  <tr>
+                    <th class="_asset visible-xs">Asset</th>
+                    <th class="_asset hidden-xs" colspan="2">Asset</th>
+                    <th class="_qrcode"></th>
+                    <th class="_issuer">Issuer</th>
+                    <th class="_currency">Base currency</th>
+                    <th class="_amount">Amount</th>
+                    <th class="_action"></th>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">LKK</a></div>
+                    </td>
+                    <td class="_qrcode">
+                      <button class="btn btn--icon" type="button"><i class="icon icon--qr_alt"></i></button>
+                    </td>
+                    <td class="_issuer">Lykke Corp.</td>
+                    <td class="_currency">LKK 3,779.33</td>
+                    <td class="_amount">LKK 3,779.33</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">LKK1Y</a></div>
+                      <span class="label label--blue label--text">Limited offer</span>
+                    </td>
+                    <td class="_qrcode">
+                      <button class="btn btn--icon" type="button"><i class="icon icon--qr_alt"></i></button>
+                    </td>
+                    <td class="_issuer">Lykke Corp.</td>
+                    <td class="_currency">LKKY 4,842.32</td>
+                    <td class="_amount">LKK1Y 4,842.32</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel--accordion">
+        <div class="panel_heading" role="tab" id="headingThree">
+          <div class="container">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <h4 class="panel_title">Crypto Currency <span>1 assets</span></h4>
+            </a>
+          </div>
+        </div>
+        <div id="collapseThree" class="panel_collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel_body">
+            <div class="container">
+              <div class="table-responsive">
+                <table class="table table--simple table_asstes">
+                  <tr>
+                    <th class="_asset visible-xs">Asset</th>
+                    <th class="_asset hidden-xs" colspan="2">Asset</th>
+                    <th class="_qrcode"></th>
+                    <th class="_issuer">Issuer</th>
+                    <th class="_currency">Base currency</th>
+                    <th class="_amount">Amount</th>
+                    <th class="_action"></th>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">LKK1Y</a></div>
+                    </td>
+                    <td class="_qrcode">
+                      <button class="btn btn--icon" type="button"><i class="icon icon--qr_alt"></i></button>
+                    </td>
+                    <td class="_issuer">Lykke Corp.</td>
+                    <td class="_currency">LKKY 4,842.32</td>
+                    <td class="_amount">LKK1Y 4,842.32</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel--accordion">
+        <div class="panel_heading" role="tab" id="headingFour">
+          <div class="container">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <h4 class="panel_title">Coin Trading <span>3 assets</span></h4>
+            </a>
+          </div>
+        </div>
+        <div id="collapseFour" class="panel_collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel_body">
+            <div class="container">
+              <div class="table-responsive">
+                <table class="table table--simple table_asstes">
+                  <tr>
+                    <th class="_asset visible-xs">Asset</th>
+                    <th class="_asset hidden-xs" colspan="2">Asset</th>
+                    <th class="_qrcode"></th>
+                    <th class="_issuer">Issuer</th>
+                    <th class="_currency">Base currency</th>
+                    <th class="_amount">Amount</th>
+                    <th class="_action"></th>
+                  </tr>
+                  <tr>
+                    <td class="issuer__img"><a href=""><img src="img/assets/bitcoin.png" width="48" alt=""></a></td>
+                    <td class="issuer__content">
+                      <div class="issuer__name"><a href="">SLR</a></div>
+                    </td>
+                    <td class="_qrcode">
+                      <button class="btn btn--icon" type="button"><i class="icon icon--qr_alt"></i></button>
+                    </td>
+                    <td class="_issuer"><a href="">Solarcoin</a></td>
+                    <td class="_currency">LKKY 4,842.32</td>
+                    <td class="_amount">SLR 24</td>
+                    <td class="_action">
+                      <div class="relative">
+                        <button class="btn btn--icon" type="button"><i class="icon icon--actions"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</article>
+
+<footer class="footer">
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-7 text-right pull-right">
+          <div class="clearfix">
+            <ul class="social social--footer_alt">
+              <li><a href="https://lykke.com/" target="_blank"><i class="icon icon--lykke"></i></a></li>
+              <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
+              <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
+              <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i></a></li>
+              <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i></a></li>
+              <li><a href="https://telegram.me/joinchat/AEGiqkF-_dNaHMwQbRSnAg" target="_blank" class="social__item"><i class="icon icon--telegram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5 text-left">
+          <div class="footer__copy">&copy; Lykke 2017. All rights reserved
+            <span class="middot">&middot;</span>
+            <a href="">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/functions.js"></script>
+
+</body>
+</html>

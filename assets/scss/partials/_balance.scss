@@ -1,0 +1,90 @@
+.header_nav_balance {
+  white-space: nowrap;
+
+  @include rem(font-size, 16px);
+  @include rem(margin-top, 15px);
+
+  .icon,
+  &__currency,
+  &__value {
+    opacity: 1;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__currency {
+    color: #79818f;
+    position: relative;
+
+    &:before {
+      font-family: icon;
+      content: "\e92b";
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #8c94a0;
+      top: 100%;
+
+      @include rem(margin-top, -1px);
+      @include rem(font-size, 11px);
+    }
+  }
+
+  .dropdown_control {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    @include rem(padding, 4px);
+    @include rem(margin-right, -4px);
+  }
+
+  &__value {
+    color: $secondary;
+  }
+
+  .icon {
+    color: $secondary;
+
+    @include rem(margin-right, 0);
+    @include rem(font-size, 18px);
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.balance_value {
+  font-size: inherit;
+  font-weight: $fw-light;
+  line-height: 1;
+  color: $text;
+
+  @include rem(margin-bottom, 10px);
+
+  &--large {
+    @include rem(font-size, 36px);
+  }
+}
+
+.balance_data {
+  font-feature-settings: "tnum";
+
+  &__item {
+    color: $secondary;
+    line-height: 1.5;
+
+    @include rem(font-size, 16px);
+  }
+
+  &__title {
+    @include rem(margin-right, 3px);
+  }
+
+  &__value {
+    color: rgba($secondary, .6);
+  }
+}
